@@ -1,8 +1,17 @@
+try {
+  window.$ = window.jQuery = require('jquery');
+} catch(e) {}
+
+require('bootstrap');
+require('pace');
+require('tether');
+import Chart from 'chart.js';
+
 /*****
 * CONFIGURATION
 */
-    //Main navigation
-    $.navigation = $('nav > ul.nav');
+  //Main navigation
+  $.navigation = $('nav > ul.nav');
 
   $.panelIconOpened = 'icon-arrow-up';
   $.panelIconClosed = 'icon-arrow-down';
@@ -144,3 +153,5 @@ function init(url) {
   $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
 }
+
+require('./views/main.js');
