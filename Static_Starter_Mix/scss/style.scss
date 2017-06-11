@@ -23,6 +23,12 @@
 // Import Bootstrap source files from bower_components
 // @import "bower_components/bootstrap/scss/bootstrap";
 
+$fa-font-path: "/dist/fonts";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+$simple-line-font-path: "/dist/fonts/";
+@import "node_modules/simple-line-icons/scss/simple-line-icons.scss";
+
 // Import core styles
 @import "custom-variables";
 @import "core/mixins";
