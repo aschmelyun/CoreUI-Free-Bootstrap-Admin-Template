@@ -1,41 +1,28 @@
 {
-  "name": "coreui.io",
-  "version": "1.0.0-alpha.5",
-  "description": "Open Source Bootstrap Admin Template",
-  "main": "",
-  "homepage": "http://coreui.io",
-  "github": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template#readme",
+  "name": "coreui-mix",
+  "version": "1.0.0",
+  "description": "Core UI static site example that compiles with Laravel mix and npm packages",
+  "main": "index.html",
+  "dependencies": {
+    "laravel-mix": "^0.11.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.16.0",
+    "chart.js": "^2.6.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "pace": "github:HubSpot/pace#v1.0.2",
+    "simple-line-icons": "^2.4.1",
+    "tether": "^1.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template.git"
-  },
-  "keywords": [
-    "Bootstrap",
-    "Admin",
-    "Template",
-    "Open",
-    "Source",
-    "AngularJS",
-    "Angular",
-    "Angular2",
-    "jQuery",
-    "CSS",
-    "HTML",
-    "RWD",
-    "Dashboard",
-    "Vue",
-    "Vue.js",
-    "Vuejs",
-    "React",
-    "React.js",
-    "Reactjs"
-  ],
-  "author": "Łukasz Holeczek",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/issues"
-  }
+  "author": "Andrew Schmelyun",
+  "url": "http://aschmelyun.com",
+  "copyright": "",
+  "license": "MIT"
 }
