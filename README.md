@@ -2,7 +2,7 @@
 
 This repo is a branch of the original CoreUI by Łukasz Holeczek. It was based on the Static_Starter example, but instead of gulp compiles all of the assets through laravel-mix (webpack). All of the JS dependencies are handled through npm, include and require methods are utilized through a single file `assets/js/app.js`.
 
-To get started, just clone this repo and run `npm install && npm run dev`. It'll spit out all of the compiled assets in a `dist/` directory. If you'd like to change this, check out the `webpack.mix.js` file in the root of the project.
+To get started, just clone this repo and run `npm install && npm run dev`. It'll spit out all of the compiled assets in a `dist/` directory. If you'd like to change the destination, check out the `webpack.mix.js` file in the root of the project.
 
 ## CoreUI - Free Bootstrap Admin Template
 
